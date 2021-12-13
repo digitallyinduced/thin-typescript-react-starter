@@ -12,7 +12,7 @@ const clients = []
 
 esbuild
   .build({
-    entryPoints: ['./app.jsx'],
+    entryPoints: ['./app.tsx'],
     bundle: true,
     outfile: 'public/app.js',
     banner: { js: ' (() => new EventSource("/esbuild").onmessage = () => location.reload())();' },
