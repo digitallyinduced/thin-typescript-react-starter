@@ -1,11 +1,12 @@
 import esbuild from 'esbuild'
 import { createServer, request } from 'http'
 import { spawn } from 'child_process'
+import 'dotenv/config'
 
 /* Want to hardcode your app url? Just modify this variable here */
 const BACKEND_URL = process.env.BACKEND_URL;
 if (!BACKEND_URL) {
-  throw new Error('The BACKEND_URL env variable is not set. Open the `server.js` and add a hardcoded default value, or make sure that the env var is always set.');
+  throw new Error('The BACKEND_URL env variable is not set. Open the `.env` file and set the value. You can find the value in your IHP Backend project settings.');
 }
 
 const clients = []
