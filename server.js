@@ -52,6 +52,8 @@ esbuild.serve({ servedir: './public', port: 3001 }, {}).then(() => {
     )
   }).listen(3000)
 
+  console.log('Development server running on http://localhost:3000')
+
   setTimeout(() => {
     const op = { darwin: ['open'], linux: ['xdg-open'], win32: ['cmd', '/c', 'start'] }
     const ptf = process.platform
