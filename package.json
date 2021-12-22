@@ -7,8 +7,8 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "esbuild": "^0.13.1",
-    "ihp-backend": "https://ihpbackend.digitallyinduced.com/ihp-backend.tar.gz?45tzhgfdsfsasd",
-    "ihp-datasync": "https://gitpkg.now.sh/digitallyinduced/ihp/lib/IHP/DataSync?f4c39e905735af444e66a832cca8593cc2b53f16",
+    "ihp-backend": "https://ihpbackend.digitallyinduced.com/ihp-backend.tar.gz?221asfc2",
+    "ihp-datasync": "https://gitpkg.now.sh/digitallyinduced/ihp/lib/IHP/DataSync?c4ce9f6fdced094a0dfa0e3cc3a26466201ec5a8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.5.3"
