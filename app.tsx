@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import * as ReactDOM from 'react-dom'
+
 import { query, initIHPBackend, DataSubscription, createRecord, updateRecord, deleteRecord, createRecords } from 'ihp-datasync';
-import { useQuery } from 'ihp-datasync/ihp-datasync-react';
+import { useQuery } from 'ihp-datasync/react';
 import { ensureIsUser, useCurrentUser, logout, getCurrentUserId } from 'ihp-backend';
 
 function App() {
