@@ -2,16 +2,19 @@ import React, { useState, useEffect } from 'react';
 import * as ReactDOM from 'react-dom'
 
 import { query, initIHPBackend, DataSubscription, createRecord, updateRecord, deleteRecord, createRecords, ensureIsUser, logout, getCurrentUserId } from 'ihp-backend';
-import { useQuery, useCurrentUser } from 'ihp-backend/react';
+import { useQuery, useCurrentUser, IHPBackend } from 'ihp-backend/react';
+
 
 function App() {
     // With `useQuery()` you can access your database:
     // 
     //     const todos = useQuery(query('todos').orderBy('createdAt'));
 
-    return <div className="container">
-        <AppNavbar/>
-    </div>
+    return <IHPBackend requireLogin>
+        <div className="container">
+            <AppNavbar/>
+        </div>
+    </IHPBackend>
 }
 
 function AppNavbar() {
@@ -40,8 +43,5 @@ function AppNavbar() {
 // This needs to be run before any calls to `query`, `createRecord`, etc.
 initIHPBackend({ host: process.env.BACKEND_URL });
 
-// Redirects to the login page if not logged in already
-ensureIsUser().then(() => {
-    // Start the React app
-    ReactDOM.render(<App/>, document.getElementById('app'));
-});
+// Start the React app
+ReactDOM.render(<App/>, document.getElementById('app'));
