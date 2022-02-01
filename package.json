@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "node server.js",
+    "dev": "node server.js",
     "build": "./node_modules/.bin/esbuild --define:process.env.NODE_ENV=\\\"production\\\" --define:process.env.BACKEND_URL=\\\"$BACKEND_URL\\\" app.tsx --bundle --outfile=public/app.js",
     "typecheck": "node_modules/.bin/tsc --watch"
   },

@@ -18,7 +18,7 @@ BACKEND_URL=https://REPLACE ME.di1337.com
 After this you can start the web server and esbuild watcher:
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ## Type Checking
