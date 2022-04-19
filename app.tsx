@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import * as ReactDOM from 'react-dom'
 
-import { query, initIHPBackend, DataSubscription, createRecord, updateRecord, deleteRecord, createRecords, ensureIsUser, logout, getCurrentUserId } from 'ihp-backend';
-import { useQuery, useCurrentUser, IHPBackend } from 'ihp-backend/react';
+import { query, initThinBackend, DataSubscription, createRecord, updateRecord, deleteRecord, createRecords, ensureIsUser, logout, getCurrentUserId } from 'thin-backend';
+import { useQuery, useCurrentUser, ThinBackend } from 'thin-backend/react';
 
 
 function App() {
@@ -10,11 +10,11 @@ function App() {
     // 
     //     const todos = useQuery(query('todos').orderBy('createdAt'));
 
-    return <IHPBackend requireLogin>
+    return <ThinBackend requireLogin>
         <div className="container">
             <AppNavbar/>
         </div>
-    </IHPBackend>
+    </ThinBackend>
 }
 
 function AppNavbar() {
@@ -41,7 +41,7 @@ function AppNavbar() {
 }
 
 // This needs to be run before any calls to `query`, `createRecord`, etc.
-initIHPBackend({ host: process.env.BACKEND_URL });
+initThinBackend({ host: process.env.BACKEND_URL });
 
 // Start the React app
 ReactDOM.render(<App/>, document.getElementById('app'));
