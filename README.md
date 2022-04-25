@@ -1,6 +1,12 @@
-# IHP React Starter
+# Thin React Starter
 
 ## Usage
+
+Create a new project:
+
+```bash
+npx degit digitallyinduced/ihp-backend-typescript-react-starter myproject
+```
 
 On first start install the npm dependencies:
 
@@ -34,6 +40,6 @@ Before the first type check, open the Project Settings and install the provided 
 ## Bundling for Production
 
 ```bash
-export BACKEND_URL="https://REPLACE ME.di1337.com"
+export BACKEND_URL="https://REPLACE ME.thinbackend.app"
 npm run build
 ```
