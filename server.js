@@ -6,7 +6,7 @@ import 'dotenv/config'
 /* Want to hardcode your app url? Just modify this variable here */
 const BACKEND_URL = process.env.BACKEND_URL;
 if (!BACKEND_URL) {
-  throw new Error('The BACKEND_URL env variable is not set. Open the `.env` file and set the value. You can find the value in your IHP Backend project settings.');
+  throw new Error('The BACKEND_URL env variable is not set. Open the `.env` file and set the value. You can find the value in your Thin project settings. See https://thin.dev/docs/troubleshooting#BACKEND_URL if you need help.');
 }
 
 const clients = []
