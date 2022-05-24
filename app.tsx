@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import * as ReactDOM from 'react-dom'
 
 import { query, initThinBackend, DataSubscription, createRecord, updateRecord, deleteRecord, createRecords, ensureIsUser, logout, getCurrentUserId } from 'thin-backend';
-import { useQuery, useCurrentUser, ThinBackend } from 'thin-backend/react';
-
+import { useQuery, useCurrentUser, ThinBackend } from 'thin-backend-react';
+import 'thin-backend-react/auth.css';
 
 function App() {
     // With `useQuery()` you can access your database:
