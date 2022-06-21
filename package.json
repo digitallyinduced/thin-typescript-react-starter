@@ -10,7 +10,7 @@
     "esbuild": "^0.13.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "thin-backend": ">=0.9.0",
+    "thin-backend": ">=0.10.1",
     "thin-backend-react": "*",
     "typescript": "^4.5.3"
   },
